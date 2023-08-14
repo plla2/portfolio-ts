@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { styles } from "../../styles";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/Logo/Logo.png";
+import Logo from "../../assets/Logo/hello_2165693.png";
+import close from "../../assets/navIcon/close.svg";
+import menu from "../../assets/navIcon/menu.svg";
 import { navLinks } from "../../constant/Const";
 
 const Navbar = () => {
@@ -46,7 +48,39 @@ const Navbar = () => {
             );
           })}
         </ul>
-        <div className="sm:hidden flex flex-1 justify-end items-center"></div>
+        <div className="sm:hidden flex flex-1 justify-end items-center">
+          <img
+            src={toggle ? close : menu}
+            onClick={() => setToggle(!toggle)}
+            className="w-[35px] h-[35px] object-contain cursor-pointer rounded-md z-20 hover:bg-primary-400 hover:bg-opacity-50"
+          />
+          <div
+            className={`${
+              !toggle ? "hidden" : "flex"
+            } pt-15 p-6 absolute top-2 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl bg-primary-400 bg-opacity-50`}
+          >
+            <ul className="list-none flex justify-end items-start flex-col gap-4">
+              {navLinks.map((link) => {
+                return (
+                  <li
+                    key={link.id}
+                    className={`${
+                      active === link.title
+                        ? "text-grayscale-950"
+                        : "text-grayscale-200"
+                    } font-medium cursor-pointer hover:bg-primary-600 hover:rounded-md`}
+                    onClick={() => {
+                      setActive(link.title);
+                      setToggle(!toggle);
+                    }}
+                  >
+                    <a href={`#${link.title}`}>{link.title}</a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
   );
