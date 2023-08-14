@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       dropShadow: {
-        green: "0 0 10rem #29c26f",
+        orange: "0 0 10rem #EA5C2B",
       },
     },
     colors: {

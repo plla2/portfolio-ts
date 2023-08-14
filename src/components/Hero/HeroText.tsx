@@ -4,7 +4,7 @@ const HeroText = () => {
   const name = "plla2 ?";
   return (
     <div
-      className="noselect w-fit h-fit text-grayscale-50 absolute z-10 flex flex-col justify-center items-center rounded-[50%]"
+      className="noselect w-fit h-fit text-grayscale-50 absolute z-10 flex flex-col justify-center items-center rounded-[50%] drop-shadow-orange "
       id="repulse-div"
     >
       <LazyMotion features={domAnimation} strict>
@@ -12,7 +12,7 @@ const HeroText = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, type: "spring" }}
-          className="text-center flex justify-center items-center flex-col opacity-100 text-7xl cursor-default"
+          className="text-center flex justify-center items-center flex-col opacity-100 text-8xl cursor-default"
           style={{ fontFamily: "Jalnan" }}
         >
           <m.span

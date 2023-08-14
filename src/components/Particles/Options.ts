@@ -87,7 +87,7 @@ export const heroOptions = {
         duration: 0.4,
         size: 40,
         color: {
-          value: "#cbbde5",
+          value: "#D3ECA7",
         },
         opacity: 8,
         mix: false,
@@ -176,6 +176,7 @@ export const heroOptions = {
           value: ["\uf3b9"],
           weight: "400",
         },
+
         {
           fill: true,
           font: "Font Awesome 6 Brands",
@@ -206,14 +207,14 @@ export const heroOptions = {
     lineLinked: {
       blink: false,
       color: {
-        value: "#ffffff",
+        value: "#D3ECA7",
       },
       consent: true,
-      distance: 100,
+      distance: 130,
       enable: true,
       frequency: 10,
-      opacity: 0.4,
-      width: 1,
+      opacity: 0.5,
+      width: 2,
     },
   },
   pauseOnBlur: true,
