@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { styles } from "../../styles";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/Logo/hello_2165693.png";
+import Logo from "../../assets/Logo/ant.svg";
 import close from "../../assets/navIcon/close.svg";
 import menu from "../../assets/navIcon/menu.svg";
 import { navLinks } from "../../constant/Const";
@@ -27,7 +27,9 @@ const Navbar = () => {
             alt="로고 이미지"
             className="w-18 h-9 object-contain"
           />
-          <p className="text-[18px] font-bold cursor-pointer flex"></p>
+          <p className="text-[18px] font-bold cursor-pointer flex text-[#45413c] ">
+            plla2
+          </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10 text-grayscale-200">
           {navLinks.map((link) => {
