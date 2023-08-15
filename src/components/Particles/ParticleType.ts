@@ -1,4 +1,4 @@
-import { IParticlesProps } from "react-particles";
+import { IParticlesProps } from "react-tsparticles";
 
 export interface HeroOptionsType {
   autoPlay: boolean;
