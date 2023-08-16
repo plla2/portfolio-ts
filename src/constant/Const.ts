@@ -1,8 +1,12 @@
-// import { avatar } from "../assets";
-
-// const media = {
-//   avatar,
-// };
+import {
+  blogIcon,
+  githubIcon,
+  lofi,
+  mailIcon,
+  moviepop,
+  phoneIcon,
+  portfolio,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -37,4 +41,67 @@ const introduction = {
 //   image: [avatar],
 // };
 
-export { introduction };
+const cardContents = [
+  {
+    id: 0,
+    icon: phoneIcon,
+    title: "PHONE",
+    contents: "010-4426-1317",
+  },
+  {
+    id: 1,
+    icon: mailIcon,
+    title: "MAIL",
+    contents: "jhbljs97@gmail.com",
+  },
+  {
+    id: 2,
+    icon: githubIcon,
+    title: "GITHUB",
+    links: "https://github.com/plla2",
+  },
+  {
+    id: 3,
+    icon: blogIcon,
+    title: "BLOG",
+    links: "https://jhbljs92.tistory.com",
+  },
+];
+
+const projects = [
+  {
+    id: 0,
+    name: "MoviePoP",
+    stack:
+      "React.js, TypeScript, React-query, Redux-Toolkit, Styled-components",
+    description:
+      "FE3인, BE3인 총6인으로 구성된 팀에서 디자인/기획부터 배포까지의 사이클을 성공적으로 끝마친 영화 리뷰작성 및 맞춤추천 + 리뷰영화를 함께 볼 팟모집 서비스",
+    image: moviepop,
+    github: "https://github.com/codestates-seb/seb44_main_008",
+    demo: "http://moviepop.online/",
+    review:
+      "https://jhbljs92.tistory.com/entry/%EB%AC%B4%EB%B9%84%ED%8C%9D-%EB%A9%94%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0",
+  },
+  {
+    id: 1,
+    name: "Lofi",
+    stack: "React.js, TypeScript, Redux-Toolkit, Sass, Mui, Bootstrap",
+    description:
+      "낮밤 + 비소리 토글모드, lofi음악청취 + 집중모드 + 투두리스트 서비스 ",
+    image: lofi,
+    github: "https://github.com/plla2/lofi-ts",
+    demo: "https://lofi-ts.netlify.app/",
+    review:
+      "https://jhbljs92.tistory.com/entry/lofi-%EC%9B%B9%EC%95%B1-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0-%ED%9A%8C%EA%B3%A0",
+  },
+  {
+    id: 2,
+    name: "Portfolio",
+    stack: "React.js, TypeScript, Framer-motion, Tailwindcss",
+    description: "framer-motion을 이용한 다양한 애니메이션을 가진 포트폴리오",
+    image: portfolio,
+    github: "https://github.com/plla2/portfolio-ts",
+    demo: "https://plla2.netlify.app/",
+  },
+];
+export { introduction, cardContents, projects };

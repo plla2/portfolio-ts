@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { styles } from "../../styles";
 import { Link } from "react-router-dom";
-// import Logo from "../../assets/Logo/ant.svg";
 import close from "../../assets/navIcon/close.svg";
 import menu from "../../assets/navIcon/menu.svg";
 import { navLinks } from "../../constant/Const";
@@ -23,11 +22,6 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          {/* <img
-            src={Logo}
-            alt="로고 이미지"
-            className="w-18 h-9 object-contain"
-          /> */}
           <LazyMotion features={domAnimation}>
             <m.p
               initial={{ x: 0 }}
