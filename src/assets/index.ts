@@ -9,7 +9,32 @@ import portfolio from "./ProjectImg/portfolio.webp";
 import linkIcon from "./Icons/link-bold.svg";
 import reviewIcon from "./Icons/blog.svg";
 
+import html from "./SkillsIcon/html.svg";
+import css from "./SkillsIcon/css.svg";
+import figma from "./SkillsIcon/figma-dark.svg";
+import git from "./SkillsIcon/git (1).svg";
+import js from "./SkillsIcon/javascript.svg";
+import postman from "./SkillsIcon/postman.svg";
+import react from "./SkillsIcon/react-dark.svg";
+import redux from "./SkillsIcon/redux.svg";
+import sass from "./SkillsIcon/sass.svg";
+import styled from "./SkillsIcon/styledcomponents.svg";
+import tailwind from "./SkillsIcon/tailwindcss-dark.svg";
+import ts from "./SkillsIcon/typescript.svg";
+
 export {
+  html,
+  css,
+  figma,
+  git,
+  js,
+  postman,
+  react,
+  redux,
+  sass,
+  styled,
+  tailwind,
+  ts,
   avatar,
   phoneIcon,
   githubIcon,
