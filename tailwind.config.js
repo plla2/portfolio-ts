@@ -6,6 +6,9 @@ export default {
       dropShadow: {
         orange: "0 0 10rem #EA5C2B",
       },
+      transitionTimingFunction: {
+        skillsLibrary: "cubic-bezier(0.68,-0.55,0.265,1.55)",
+      },
     },
     colors: {
       primary: {
