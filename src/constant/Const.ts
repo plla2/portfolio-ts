@@ -1,11 +1,23 @@
 import {
   blogIcon,
+  css,
+  figma,
+  git,
   githubIcon,
+  html,
+  js,
   lofi,
   mailIcon,
   moviepop,
   phoneIcon,
   portfolio,
+  postman,
+  react,
+  redux,
+  sass,
+  styled,
+  tailwind,
+  ts,
 } from "../assets";
 
 export const navLinks = [
@@ -36,10 +48,6 @@ const introduction = {
     "신입으로서 항상 배우는 자세를 가지고 문제에서 기회를 잡고, 해결을 통한 성취감을 얻으며 경력을 쌓을 준비가 되었습니다!",
   ],
 };
-
-// const profileImg = {
-//   image: [avatar],
-// };
 
 const cardContents = [
   {
@@ -104,4 +112,79 @@ const projects = [
     demo: "https://plla2.netlify.app/",
   },
 ];
-export { introduction, cardContents, projects };
+
+const skills = [
+  {
+    id: 13,
+    title: "HTML",
+    icon: html,
+    desc: "저는 HTML을 사용하여 웹접근성, 표준성을 준수하여 모든 사용자가 액세스할 수 있는 의미 있는 컨텐츠를 시멘틱 태그를 이용해 마크업 할 수 있습니다.",
+  },
+  {
+    id: 14,
+    title: "CSS",
+    icon: css,
+    desc: "저는 css를 사용하여 웹 페이지를 디자인하고, display, position 등을 통해 사용자 경험을 향상시킨 레이아웃을 만들 수 있습니다.",
+  },
+  {
+    id: 15,
+    title: "JavaScript",
+    icon: js,
+    desc: "저는 JavaScript의 ES6, Array, Method, DOM 등을 사용하여 웹 페이지에 상호작용 및 기능을 도입하여 동적 사용자 인터페이스를 만들 수 있습니다. ",
+  },
+  {
+    id: 16,
+    title: "TypeScript",
+    icon: ts,
+    desc: "저는 TypeScript를 사용하여 코드에 목적을 명시하여 사전에 버그를 제거하고, 자동완성 및 실행 전 피드백을 통해 작업과 동시에 디버깅을 하여 생산성을 높일 수 있습니다.",
+  },
+  {
+    id: 17,
+    title: "React",
+    icon: react,
+    desc: "저는 React를 사용하여 재사용 가능한 컴포넌트를 설계하여 만들고, hook과 context를 사용하여 상태를 관리하고, 성능을 최적화 시킬 수 있습니다.",
+  },
+  {
+    id: 18,
+    title: "Redux-Toolkit",
+    icon: redux,
+    desc: "저는 Redux-Toolkit을 사용하여 Redux의 불편함을 해결하여 상태관리를 더 간단하고, 효율적으로 할 수 있고, 유지보수를 쉽게 만들 수 있습니다.",
+  },
+  {
+    id: 19,
+    title: "Styled-components",
+    icon: styled,
+    desc: "저는 Styled-components를 사용하여 CSS 모델을 컴포넌트 레벨로 추상화하고, props를 활용하여 조건부 스타일링을 할 수 있습니다.",
+  },
+  {
+    id: 20,
+    title: "Sass",
+    icon: sass,
+    desc: "저는 Sass를 사용하여 셀렉터, 속성을 중첩시키거나 상위요소를 참조하고, 보다 간편한 방법으로 변수 선언 및 사용하여 효율적으로 개발할 수 있습니다.",
+  },
+  {
+    id: 21,
+    title: "Tailwindcss",
+    icon: tailwind,
+    desc: "저는 TailwindCss를 사용하여 보다 편하게 반응형 레이아웃을 만들 수 있고, 커스터마이징을 통해 유연하게 스타일링을 할 수 있습니다.",
+  },
+  {
+    id: 22,
+    title: "Git",
+    icon: git,
+    desc: "저는 Git을 사용하여 원활한 프로젝트 협업, 코드 공유 및 이슈 추적을 하고, 여러가지 명령어들을 통해 버전관리를 할 수 있습니다.",
+  },
+  {
+    id: 23,
+    title: "Postman",
+    icon: postman,
+    desc: "저는 Postman을 사용하여 클라이언트 개발을 배제하고 RESTAPI를 테스팅할 수 있고, 문서화 또는 팀원 간 공유를 할 수 있습니다.",
+  },
+  {
+    id: 24,
+    title: "Figma",
+    icon: figma,
+    desc: "저는 Figma를 사용하여 디자이너 및 팀원들과 협업하여 더욱 빠르고 효율적으로 수행하고, 매력적인 사용자 인터페이스를 디자인할 수 있습니다.",
+  },
+];
+export { introduction, cardContents, projects, skills };
