@@ -15,7 +15,6 @@ const Project = () => {
           <div className="w-full xl:w-[90%] h-[-10%]">
             <ProjectCards />
           </div>
-          <div className="absolute w-full h-full top-[100%] right-[-75%] sm:right-[-50%]"></div>
         </div>
       </div>
     </div>
