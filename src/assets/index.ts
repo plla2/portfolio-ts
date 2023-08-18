@@ -8,7 +8,7 @@ import lofi from "./ProjectImg/lofi.webp";
 import portfolio from "./ProjectImg/portfolio.webp";
 import linkIcon from "./Icons/link-bold.svg";
 import reviewIcon from "./Icons/blog.svg";
-
+import footerTistory from "./Icons/file-post.svg";
 import html from "./SkillsIcon/html.svg";
 import css from "./SkillsIcon/css.svg";
 import figma from "./SkillsIcon/figma-dark.svg";
@@ -21,6 +21,7 @@ import sass from "./SkillsIcon/sass.svg";
 import styled from "./SkillsIcon/styledcomponents.svg";
 import tailwind from "./SkillsIcon/tailwindcss-dark.svg";
 import ts from "./SkillsIcon/typescript.svg";
+import sendIcon from "./Icons/send-alt-filled.svg";
 
 export {
   html,
@@ -45,4 +46,6 @@ export {
   portfolio,
   linkIcon,
   reviewIcon,
+  footerTistory,
+  sendIcon,
 };
