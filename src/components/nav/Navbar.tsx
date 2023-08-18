@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { styles } from "../../styles";
-// import { Link } from "react-router-dom";
 import close from "../../assets/navIcon/close.svg";
 import menu from "../../assets/navIcon/menu.svg";
 import { navLinks } from "../../constant/Const";
