@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Jalnan";
+  src: url(/Fonts/Jalnan/Jalnan.ttf);
+}
+@font-face {
+  font-family: "GmarketMedium";
+  src: url(/Fonts/Gmarket/GmarketSansTTFMedium.ttf);
+}
+@font-face {
+  font-family: "GmarketBold";
+  src: url(/Fonts/Gmarket/GmarketSansTTFBold.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,4 +26,60 @@
 
 body {
   background-color: #789395;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.overflow-hidden-web {
+  overflow: hidden;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.message::after {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  background: #292d44;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  border-radius: 0 0 0 100%;
+}
+
+.icon:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+.icon:hover img {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+.icon:hover span {
+  transform: translateX(5em);
+}
+.icon:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+.active::after,
+.active::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #e5e3c9;
+  display: block;
+  transition: 0.5s;
 }
