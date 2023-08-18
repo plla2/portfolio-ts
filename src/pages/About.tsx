@@ -5,12 +5,15 @@ import AboutCard from "../components/Common/AboutCard";
 
 const About = () => {
   return (
-    <div id="about" className="w-full flex justify-center overflow-hidden-web">
-      <div className="w-full xl:w-[80%] flex flex-col pb-16">
+    <div
+      id="about"
+      className="w-full flex justify-center overflow-hidden-web pt-24"
+    >
+      <div className="w-full xl:w-[80%] flex flex-col pb-12">
         <div className="w-full">
           <SectionTitle title="ABOUT ME" subTitle="INTRODUCTION" />
         </div>
-        <div className="w-full flex flex-col-reverse sm:flex-row">
+        <div className="w-full flex flex-col-reverse sm:flex-row pb-16">
           <div className="w-full md:w-[50%] md:h-full flex items-center mt-10">
             <LazyMotion features={domAnimation} strict>
               <m.p
@@ -22,7 +25,7 @@ const About = () => {
                   stiffness: 100,
                   damping: 20,
                 }}
-                style={{ fontFamily: "GmarketSansTTFMedium" }}
+                style={{ fontFamily: "GmarketMedium" }}
                 className="text-grayscale-0 p-7 flex flex-col gap-6"
               >
                 <span>{introduction.text[0]}</span>

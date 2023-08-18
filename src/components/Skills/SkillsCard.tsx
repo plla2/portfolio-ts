@@ -25,10 +25,7 @@ const SkillsCard = () => {
                 alt="스킬 아이콘"
                 className="h-[40px] flex justify-center items-center w-[50px] rounded-[50%] p-1 object-contain"
               />
-              <span
-                className="text-lg"
-                style={{ fontFamily: "GmarketSansTTFMedium" }}
-              >
+              <span className="text-lg" style={{ fontFamily: "GmarketMedium" }}>
                 {skill.title}
               </span>
               <span className="text-center text-sm py-3 px-4">

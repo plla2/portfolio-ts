@@ -8,9 +8,9 @@ const Skills = () => {
     <>
       <div
         id="skills"
-        className="w-full overflow-hidden-web flex flex-col items-center mt-16"
+        className="w-full overflow-hidden-web flex flex-col items-center "
       >
-        <div className="w-full min-h-[800px] flex flex-col xl:w-[80%] items-center">
+        <div className="w-full min-h-[800px] flex flex-col xl:w-[80%] items-center mt-12">
           <div className="w-full my-10">
             <SectionTitle title="SKILLS" subTitle="WHAT I DO" />
           </div>
