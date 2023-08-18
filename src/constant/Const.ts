@@ -18,7 +18,16 @@ import {
   styled,
   tailwind,
   ts,
+  sendIcon,
 } from "../assets";
+
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+const icons = {
+  faGithub,
+  faLinkedin,
+  sendIcon,
+};
 
 export const navLinks = [
   {
@@ -85,7 +94,7 @@ const projects = [
     description:
       "FE3인, BE3인 총6인으로 구성된 팀에서 디자인/기획부터 배포까지의 사이클을 성공적으로 끝마친 영화 리뷰작성 및 맞춤추천 + 리뷰영화를 함께 볼 팟모집 서비스",
     image: moviepop,
-    github: "https://github.com/codestates-seb/seb44_main_008",
+    github: "https://github.com/plla2/Movie-PoP",
     demo: "http://moviepop.online/",
     review:
       "https://jhbljs92.tistory.com/entry/%EB%AC%B4%EB%B9%84%ED%8C%9D-%EB%A9%94%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0",
@@ -187,4 +196,4 @@ const skills = [
     desc: "저는 Figma를 사용하여 디자이너 및 팀원들과 협업하여 더욱 빠르고 효율적으로 수행하고, 매력적인 사용자 인터페이스를 디자인할 수 있습니다.",
   },
 ];
-export { introduction, cardContents, projects, skills };
+export { introduction, cardContents, projects, skills, icons };
