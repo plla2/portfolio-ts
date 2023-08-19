@@ -7,7 +7,6 @@ import moviepop from "./ProjectImg/moviePoP.webp";
 import lofi from "./ProjectImg/lofi.webp";
 import portfolio from "./ProjectImg/portfolio.webp";
 import linkIcon from "./Icons/link-bold.svg";
-import reviewIcon from "./Icons/blog.svg";
 import footerTistory from "./Icons/file-post.svg";
 import html from "./SkillsIcon/html.svg";
 import css from "./SkillsIcon/css.svg";
@@ -22,6 +21,9 @@ import styled from "./SkillsIcon/styledcomponents.svg";
 import tailwind from "./SkillsIcon/tailwindcss-dark.svg";
 import ts from "./SkillsIcon/typescript.svg";
 import sendIcon from "./Icons/send-alt-filled.svg";
+import moviepop1 from "./ModalImg/moviePop1.webp";
+import moviepop2 from "./ModalImg/moviePop2.webp";
+import moviepop3 from "./ModalImg/moviePop3.webp";
 
 export {
   html,
@@ -45,7 +47,9 @@ export {
   lofi,
   portfolio,
   linkIcon,
-  reviewIcon,
   footerTistory,
   sendIcon,
+  moviepop1,
+  moviepop2,
+  moviepop3,
 };
