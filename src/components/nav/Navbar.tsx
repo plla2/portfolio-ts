@@ -5,6 +5,7 @@ import menu from "../../assets/navIcon/menu.svg";
 import { navLinks } from "../../constant/Const";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
       className={`${styles.paddingX} w-full flex items-center py-2 fixed top-0 z-20 bg-primary backdrop-blur-sm`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link
+        <NavLink
           to="/"
           className="flex items-center gap-2"
           onClick={() => {
@@ -29,7 +30,7 @@ const Navbar = () => {
               PLLA2
             </m.p>
           </LazyMotion>
-        </Link>
+        </NavLink>
         <ul className="hidden sm:flex flex-row gap-10 text-grayscale-200">
           {navLinks.map((link) => {
             return (
@@ -43,7 +44,7 @@ const Navbar = () => {
                   spy={true}
                   smooth={true}
                   offset={0}
-                  duration={200}
+                  duration={150}
                 >
                   {link.title}
                 </Link>
