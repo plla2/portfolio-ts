@@ -1,9 +1,9 @@
-import Modal from "react-modal";
+import ReactModal from "react-modal";
 import { ContentTypes } from "./Types";
 
 const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
   return (
-    <Modal
+    <ReactModal
       isOpen={showModal}
       onRequestClose={handleCloseModal}
       ariaHideApp={false}
@@ -81,7 +81,7 @@ const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
           <div>내용</div>
         </div>
       </div>
-    </Modal>
+    </ReactModal>
   );
 };
 

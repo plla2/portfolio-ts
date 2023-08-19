@@ -2,12 +2,12 @@ import { githubIcon, linkIcon } from "../../assets";
 import { m } from "framer-motion";
 import "./styles.css";
 import { useEffect, useState } from "react";
-import Modal from "react-modal";
+import ReactModal from "react-modal";
 import ModalContents from "./ModalContents";
 import { PropsType } from "./Types";
 
 const ProjectSingle = ({ item }: PropsType) => {
-  Modal.setAppElement("#root");
+  ReactModal.setAppElement("#root");
   const [showModal, setShowModal] = useState(false);
 
   const handleOpenModal = () => setShowModal(true);
