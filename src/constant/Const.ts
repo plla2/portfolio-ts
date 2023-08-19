@@ -19,6 +19,9 @@ import {
   tailwind,
   ts,
   sendIcon,
+  moviepop1,
+  moviepop2,
+  moviepop3,
 } from "../assets";
 
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -94,10 +97,13 @@ const projects = [
     description:
       "FE3인, BE3인 총6인으로 구성된 팀에서 디자인/기획부터 배포까지의 사이클을 성공적으로 끝마친 영화 리뷰작성 및 맞춤추천 + 리뷰영화를 함께 볼 팟모집 서비스",
     image: moviepop,
+    team: "Team-Project",
     github: "https://github.com/plla2/Movie-PoP",
     demo: "http://moviepop.online/",
     review:
       "https://jhbljs92.tistory.com/entry/%EB%AC%B4%EB%B9%84%ED%8C%9D-%EB%A9%94%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0",
+    date: "2023-06-28 ~ 2023-07-24",
+    modalImg: [moviepop1, moviepop2, moviepop3],
   },
   {
     id: 1,
@@ -106,10 +112,13 @@ const projects = [
     description:
       "낮밤 + 비소리 토글모드, lofi음악청취 + 집중모드 + 투두리스트 서비스 ",
     image: lofi,
+    team: "Solo-Project",
     github: "https://github.com/plla2/lofi-ts",
     demo: "https://lofi-ts.netlify.app/",
     review:
       "https://jhbljs92.tistory.com/entry/lofi-%EC%9B%B9%EC%95%B1-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0-%ED%9A%8C%EA%B3%A0",
+    date: "2023-07-27 ~ 2023-08-09",
+    modalImg: [moviepop1, moviepop2, moviepop3],
   },
   {
     id: 2,
@@ -117,8 +126,13 @@ const projects = [
     stack: "React.js, TypeScript, Framer-motion, Tailwindcss",
     description: "framer-motion을 이용한 다양한 애니메이션을 가진 포트폴리오",
     image: portfolio,
+    team: "Solo-Project",
     github: "https://github.com/plla2/portfolio-ts",
     demo: "https://plla2.netlify.app/",
+    review:
+      "https://jhbljs92.tistory.com/entry/lofi-%EC%9B%B9%EC%95%B1-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0-%ED%9A%8C%EA%B3%A0",
+    date: "2023-08-10 ~ ",
+    modalImg: [moviepop1, moviepop2, moviepop3],
   },
 ];
 
