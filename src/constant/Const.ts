@@ -94,6 +94,28 @@ const projects = [
     name: "MoviePoP",
     stack:
       "React.js, TypeScript, React-query, Redux-Toolkit, Styled-components",
+    stackCause: [
+      "TypeScript - 컴파일 언어인 TypeScript를 사용함으로써 컴파일 과정에서 오류를 잡아내기 때문에 오류를 비교적 쉽게 잡아내기 위해 사용",
+      "React-query - 데이터 패칭 로직 단순화, 캐싱, 동기적 실행, 서버의 상태의 업데이트를 좀 더 용이하게 사용하기 위해 사용",
+    ],
+    mywork: [
+      "프로젝트 초기세팅",
+      "Input 컴포넌트 제작",
+      "마이페이지 (각 탭별 CRUD)",
+      "페이지네이션",
+      "404, 500 에러페이지",
+      "토스트 기능",
+      "로그인/로그아웃 토큰관리",
+      "회원정보 수정",
+      "비밀변호 변경",
+      "회원 탈퇴",
+      "푸터",
+    ],
+    troubleShootings: [
+      "공통된 컴포넌트(Input, Button, Modal 등)를 사용할 때 알 수 없는 프롭이 DOM으로 전달되어서 생긴 경고를 해결하기 위해 @emotion과 함께 사용되는 유틸리티 라이브러리 중 하나인 @emotion/is-prop-valid를 사용하여 알 수 없는 프롭을 필터링하여 경고를 피할 수 있었다.",
+      "마이페이지에서 내 게시글을 삭제하면 곧바로 반영되어야 하는데, 새로고침을 눌러야만 삭제가 반영되는 이슈가 있었다. react-query를 사용하여 update요청 후에 get요청을 간단하게 재실행시킬 수 있었다. mutation함수가 성공할 때 invalidateQueries에 unique key로 맵핑된 get요청 함수를 넣어주어 해결할 수 있었다.",
+      "클릭시 해당 게시글로 이동하는 div태그를 부모태그로 가진 button태그가 있는데 해당 button태그를 누르면 부모태그인 div태그까지 클릭이 반응되는 이슈가 있었다. 이벤트 버블링을 통해 부모 태그들까지 클릭 이벤트를 인식하고 반응하게 되는 것이였다. 이벤트 버블링을 막기위해 event.stopPropagation()을 통해 이벤트리스너가 가리키고 있는 요소만 이벤트를 감지하게하여 해결할 수 있었다.",
+    ],
     description:
       "FE3인, BE3인 총6인으로 구성된 팀에서 디자인/기획부터 배포까지의 사이클을 성공적으로 끝마친 영화 리뷰작성 및 맞춤추천 + 리뷰영화를 함께 볼 팟모집 서비스",
     image: moviepop,
@@ -119,6 +141,28 @@ const projects = [
       "https://jhbljs92.tistory.com/entry/lofi-%EC%9B%B9%EC%95%B1-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0-%ED%9A%8C%EA%B3%A0",
     date: "2023-07-27 ~ 2023-08-09",
     modalImg: [moviepop1, moviepop2, moviepop3],
+    stackCause: [
+      "TypeScript - 컴파일 언어인 TypeScript를 사용함으로써 컴파일 과정에서 오류를 잡아내기 때문에 오류를 비교적 쉽게 잡아내기 위해 사용",
+      "React-query - 데이터 패칭 로직 단순화, 캐싱, 동기적 실행, 서버의 상태의 업데이트를 좀 더 용이하게 사용하기 위해 사용",
+    ],
+    mywork: [
+      "프로젝트 초기세팅",
+      "Input 컴포넌트 제작",
+      "마이페이지 (각 탭별 CRUD)",
+      "페이지네이션",
+      "404, 500 에러페이지",
+      "토스트 기능",
+      "로그인/로그아웃 토큰관리",
+      "회원정보 수정",
+      "비밀변호 변경",
+      "회원 탈퇴",
+      "푸터",
+    ],
+    troubleShootings: [
+      "공통된 컴포넌트(Input, Button, Modal 등)를 사용할 때 알 수 없는 프롭이 DOM으로 전달되어서 생긴 경고를 해결하기 위해 @emotion과 함께 사용되는 유틸리티 라이브러리 중 하나인 @emotion/is-prop-valid를 사용하여 알 수 없는 프롭을 필터링하여 경고를 피할 수 있었다.",
+      "마이페이지에서 내 게시글을 삭제하면 곧바로 반영되어야 하는데, 새로고침을 눌러야만 삭제가 반영되는 이슈가 있었다. react-query를 사용하여 update요청 후에 get요청을 간단하게 재실행시킬 수 있었다. mutation함수가 성공할 때 invalidateQueries에 unique key로 맵핑된 get요청 함수를 넣어주어 해결할 수 있었다.",
+      "클릭시 해당 게시글로 이동하는 div태그를 부모태그로 가진 button태그가 있는데 해당 button태그를 누르면 부모태그인 div태그까지 클릭이 반응되는 이슈가 있었다. 이벤트 버블링을 통해 부모 태그들까지 클릭 이벤트를 인식하고 반응하게 되는 것이였다. 이벤트 버블링을 막기위해 event.stopPropagation()을 통해 이벤트리스너가 가리키고 있는 요소만 이벤트를 감지하게하여 해결할 수 있었다.",
+    ],
   },
   {
     id: 2,
@@ -133,6 +177,28 @@ const projects = [
       "https://jhbljs92.tistory.com/entry/lofi-%EC%9B%B9%EC%95%B1-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0-%ED%9A%8C%EA%B3%A0",
     date: "2023-08-10 ~ ",
     modalImg: [moviepop1, moviepop2, moviepop3],
+    stackCause: [
+      "TypeScript - 컴파일 언어인 TypeScript를 사용함으로써 컴파일 과정에서 오류를 잡아내기 때문에 오류를 비교적 쉽게 잡아내기 위해 사용",
+      "React-query - 데이터 패칭 로직 단순화, 캐싱, 동기적 실행, 서버의 상태의 업데이트를 좀 더 용이하게 사용하기 위해 사용",
+    ],
+    mywork: [
+      "프로젝트 초기세팅",
+      "Input 컴포넌트 제작",
+      "마이페이지 (각 탭별 CRUD)",
+      "페이지네이션",
+      "404, 500 에러페이지",
+      "토스트 기능",
+      "로그인/로그아웃 토큰관리",
+      "회원정보 수정",
+      "비밀변호 변경",
+      "회원 탈퇴",
+      "푸터",
+    ],
+    troubleShootings: [
+      "공통된 컴포넌트(Input, Button, Modal 등)를 사용할 때 알 수 없는 프롭이 DOM으로 전달되어서 생긴 경고를 해결하기 위해 @emotion과 함께 사용되는 유틸리티 라이브러리 중 하나인 @emotion/is-prop-valid를 사용하여 알 수 없는 프롭을 필터링하여 경고를 피할 수 있었다.",
+      "마이페이지에서 내 게시글을 삭제하면 곧바로 반영되어야 하는데, 새로고침을 눌러야만 삭제가 반영되는 이슈가 있었다. react-query를 사용하여 update요청 후에 get요청을 간단하게 재실행시킬 수 있었다. mutation함수가 성공할 때 invalidateQueries에 unique key로 맵핑된 get요청 함수를 넣어주어 해결할 수 있었다.",
+      "클릭시 해당 게시글로 이동하는 div태그를 부모태그로 가진 button태그가 있는데 해당 button태그를 누르면 부모태그인 div태그까지 클릭이 반응되는 이슈가 있었다. 이벤트 버블링을 통해 부모 태그들까지 클릭 이벤트를 인식하고 반응하게 되는 것이였다. 이벤트 버블링을 막기위해 event.stopPropagation()을 통해 이벤트리스너가 가리키고 있는 요소만 이벤트를 감지하게하여 해결할 수 있었다.",
+    ],
   },
 ];
 

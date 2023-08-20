@@ -11,6 +11,9 @@ export interface PropsType {
     review: string;
     date: string;
     modalImg: string[];
+    stackCause: string[];
+    mywork: string[];
+    troubleShootings: string[];
   };
 }
 
@@ -27,6 +30,9 @@ export interface ContentTypes {
     review: string;
     date: string;
     modalImg: string[];
+    stackCause: string[];
+    mywork: string[];
+    troubleShootings: string[];
   };
   handleCloseModal(): void;
   showModal: boolean;
