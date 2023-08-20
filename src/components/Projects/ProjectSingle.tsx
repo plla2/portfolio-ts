@@ -28,11 +28,12 @@ const ProjectSingle = ({ item }: PropsType) => {
         item={item}
         showModal={showModal}
       />
-      <div className="card" onClick={handleOpenModal}>
+      <div className="card cursor-pointer" onClick={handleOpenModal}>
         <m.div
           className="card"
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
         >
           <div className="content">
             <div className="back">
