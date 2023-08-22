@@ -22,6 +22,9 @@ import {
   moviepop1,
   moviepop2,
   moviepop3,
+  lofi1,
+  lofi2,
+  lofi3,
 } from "../assets";
 
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -140,7 +143,7 @@ const projects = [
     review:
       "https://jhbljs92.tistory.com/entry/lofi-%EC%9B%B9%EC%95%B1-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0-%ED%9A%8C%EA%B3%A0",
     date: "2023-07-27 ~ 2023-08-09",
-    modalImg: [moviepop1, moviepop2, moviepop3],
+    modalImg: [lofi1, lofi2, lofi3],
     stackCause: [
       "TypeScript - 컴파일 언어인 TypeScript를 사용함으로써 컴파일 과정에서 오류를 잡아내기 때문에 오류를 비교적 쉽게 잡아내기 위해 사용",
       "React-query - 데이터 패칭 로직 단순화, 캐싱, 동기적 실행, 서버의 상태의 업데이트를 좀 더 용이하게 사용하기 위해 사용",

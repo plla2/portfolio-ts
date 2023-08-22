@@ -24,6 +24,9 @@ import sendIcon from "./Icons/send-alt-filled.svg";
 import moviepop1 from "./ModalImg/moviePop1.webp";
 import moviepop2 from "./ModalImg/moviePop2.webp";
 import moviepop3 from "./ModalImg/moviePop3.webp";
+import lofi1 from "./ModalImg/lofi1.webp";
+import lofi2 from "./ModalImg/lofi2.webp";
+import lofi3 from "./ModalImg/lofi3.webp";
 
 export {
   html,
@@ -52,4 +55,7 @@ export {
   moviepop1,
   moviepop2,
   moviepop3,
+  lofi1,
+  lofi2,
+  lofi3,
 };
