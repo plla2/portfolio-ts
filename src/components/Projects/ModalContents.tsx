@@ -1,6 +1,7 @@
 import ReactModal from "react-modal";
 import { ContentTypes } from "./Types";
 import { LazyMotion, domAnimation, m } from "framer-motion";
+import { close } from "../../assets";
 
 const dropIn = {
   hidden: {
@@ -110,6 +111,12 @@ const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
             </div>
           </div>
           <div className="container__child w-full h-full text-[#191919] ml-8 mt-7">
+            <img
+              src={close}
+              alt="닫기 버튼"
+              className="absolute w-6 h-6 right-[3%] top-2 cursor-pointer"
+              onClick={handleCloseModal}
+            />
             <span>
               <p className="w-[9rem] h-14 flex items-center justify-center rounded-md text-center text-xl font-semibold bg-primary-500 ">
                 {item.name}

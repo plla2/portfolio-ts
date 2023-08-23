@@ -27,6 +27,7 @@ import moviepop3 from "./ModalImg/moviePop3.webp";
 import lofi1 from "./ModalImg/lofi1.webp";
 import lofi2 from "./ModalImg/lofi2.webp";
 import lofi3 from "./ModalImg/lofi3.webp";
+import close from "./navIcon/close.svg";
 
 export {
   html,
@@ -58,4 +59,5 @@ export {
   lofi1,
   lofi2,
   lofi3,
+  close,
 };
