@@ -1,4 +1,4 @@
-import { githubIcon, linkIcon } from "../../assets";
+import { demoIcon, githubIcon } from "../../assets";
 import { m } from "framer-motion";
 import "./styles.css";
 import { useEffect, useState } from "react";
@@ -77,7 +77,7 @@ const ProjectSingle = ({ item }: PropsType) => {
             <img
               src={githubIcon}
               alt="깃허브 아이콘"
-              className="ml-[1.1em] w-8"
+              className="ml-[0.8em] w-8"
             />
           </m.button>
           <m.button
@@ -86,7 +86,7 @@ const ProjectSingle = ({ item }: PropsType) => {
             className="card2 w-14 h-14 outline-none border-0 bg-[#ECF9FF]"
             onClick={() => window.open(item.demo)}
           >
-            <img src={linkIcon} alt="링크 아이콘" className="ml-[0.5em] w-8" />
+            <img src={demoIcon} alt="링크 아이콘" className="ml-[0.7em] w-8" />
           </m.button>
         </div>
       </m.div>
