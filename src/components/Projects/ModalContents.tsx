@@ -105,7 +105,7 @@ const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
                 whileHover={{ scale: 1.1, backgroundColor: "#94B49F" }}
                 whileTap={{ scale: 0.9 }}
               >
-                <i className="fa fa-twitter"></i>
+                <i className="fa-solid fa-globe"></i>
                 <span className="ml-1">DEMO</span>
               </m.button>
             </div>
