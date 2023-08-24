@@ -160,9 +160,8 @@ const projects = [
       "전체화면 기능",
     ],
     troubleShootings: [
-      "Invalid type 'false' | 'active' of template literal expression 공통된 컴포넌트(Input, Button, Modal 등)를 사용할 때 알 수 없는 프롭이 DOM으로 전달되어서 생긴 경고를 해결하기 위해 @emotion과 함께 사용되는 유틸리티 라이브러리 중 하나인 @emotion/is-prop-valid를 사용하여 알 수 없는 프롭을 필터링하여 경고를 피할 수 있었다.",
-      "마이페이지에서 내 게시글을 삭제하면 곧바로 반영되어야 하는데, 새로고침을 눌러야만 삭제가 반영되는 이슈가 있었다. react-query를 사용하여 update요청 후에 get요청을 간단하게 재실행시킬 수 있었다. mutation함수가 성공할 때 invalidateQueries에 unique key로 맵핑된 get요청 함수를 넣어주어 해결할 수 있었다.",
-      "클릭시 해당 게시글로 이동하는 div태그를 부모태그로 가진 button태그가 있는데 해당 button태그를 누르면 부모태그인 div태그까지 클릭이 반응되는 이슈가 있었다. 이벤트 버블링을 통해 부모 태그들까지 클릭 이벤트를 인식하고 반응하게 되는 것이였다. 이벤트 버블링을 막기위해 event.stopPropagation()을 통해 이벤트리스너가 가리키고 있는 요소만 이벤트를 감지하게하여 해결할 수 있었다.",
+      "Invalid type 'false' | 'active' of template literal expression 해당 에러는 표현식의 결과가 유효하지 않아서 발생한 에러였다. 삼항연산자로 moodOpen이 true일때만 active를 반환하고, false일때는 빈문자열을 반환하도록 처리해주었다.",
+      "~코드에서 이 호출과 일치하는 오버로드가 없습니다. 해당 에러가 발생하는 주요 이유는 호출하는 인자의 타입이 일치하는 오버로드 시그니처가 없을 때, 인자 개수가 일치하는 오버로드 시그니처가 없을 때가 있는데 첫번째의 경우는 inputValue의 타입이 boolean이므로 processValue함수에 맞는 오버로드 시그니처가 없기 때문에 에러가 발생하기 때문에 processValue함수에 value:boolean으로 올바른 오버로드 시그니처를 추가하거나, 타입 체크를 수정하는 것으로 해결이 가능하다. 두번째의 경우는 함수 호출 부분에서 오버로드된 함수를 호출할 때 모호성이 생기기 때문에 타입에러가 발생하여 호출 시에 매개변수를 명시적으로 구분하여 오버로드를 선택하도록 하는것으로 해결이 가능하다.",
     ],
   },
   {
