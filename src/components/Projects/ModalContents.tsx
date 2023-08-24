@@ -171,7 +171,7 @@ const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
             </span>
             <span>
               <p className="mb-1 w-fit mt-4 font-semibold border-b-2">
-                회고 블로깅
+                회고, 트러블슈팅 블로깅
               </p>
               <button
                 onClick={() => window.open(`${item.review}`)}
