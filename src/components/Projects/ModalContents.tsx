@@ -75,16 +75,22 @@ const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
                 src={item.modalImg[0]}
                 alt="프로젝트 이미지"
                 className="rounded-lg"
+                loading="lazy"
+                decoding="async"
               />
               <img
                 src={item.modalImg[1]}
                 alt="프로젝트 이미지"
                 className="rounded-lg"
+                loading="lazy"
+                decoding="async"
               />
               <img
                 src={item.modalImg[2]}
                 alt="프로젝트 이미지"
                 className="rounded-lg"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="thumbnail__links relative z-10 flex w-full justify-between">
