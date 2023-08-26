@@ -4,21 +4,22 @@
 
 @font-face {
   font-family: "Jalnan";
-  src: url(/Fonts/Jalnan/Jalnan.ttf);
+  src: url(/Fonts/Jalnan/Jalnan.woff2) format("woff2");
 }
 @font-face {
   font-family: "GmarketMedium";
-  src: url(/Fonts/Gmarket/GmarketSansTTFMedium.ttf);
+  src: url(/Fonts/Gmarket/GmarketSansTTFMedium.woff2) format("woff2");
 }
 @font-face {
   font-family: "GmarketBold";
-  src: url(/Fonts/Gmarket/GmarketSansTTFBold.ttf);
+  src: url(/Fonts/Gmarket/GmarketSansTTFBold.woff2) format("woff2");
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-display: block;
 }
 ::-webkit-scrollbar {
   display: none;
