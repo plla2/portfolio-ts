@@ -54,7 +54,7 @@ const ContactForm = () => {
         >
           <div className="w-full flex flex-col mb-3 shadow-xl">
             <label
-              htmlFor="name"
+              htmlFor="Name"
               className="font-semibold text-[#FFF8CD] tracking-wider"
             >
               Name
@@ -62,15 +62,16 @@ const ContactForm = () => {
             <input
               type="text"
               name="user_name"
-              id="user_name"
+              id="Name"
               required
               className="relative p-[0.7em] mt-2 rounded-md text-grayscale-950 focus:outline-none focus:border-[#d6a8e9] focus:shadow-2xl bg-[#FFF6E0] border-2 border-[#FFBFBF]"
               placeholder="회사이름 및 성함을 입력해주세요."
+              autoComplete="Name"
             />
           </div>
           <div className="w-full flex flex-col mb-3 shadow-xl">
             <label
-              htmlFor="email"
+              htmlFor="E-mail"
               className="font-semibold text-[#FFF8CD] tracking-wider"
             >
               E-mail
@@ -78,10 +79,11 @@ const ContactForm = () => {
             <input
               type="email"
               name="user_email"
-              id="user_email"
+              id="E-mail"
               required
               className="p-[0.7em] mt-2 rounded-md text-grayscale-950 focus:outline-none focus:border-[#d6a8e9] focus:shadow-2xl focus:border-2 bg-[#FFF6E0] border-2 border-[#FFBFBF]"
               placeholder="이메일을 입력해주세요."
+              autoComplete="E-mail"
             />
           </div>
           <div className="w-full flex flex-col mb-3 shadow-xl">
@@ -97,6 +99,7 @@ const ContactForm = () => {
               required
               className="p-[1em] mt-2 rounded-md text-grayscale-950 focus:outline-none focus:border-[#d6a8e9] focus:shadow-2xl focus:border-2 bg-[#FFF6E0] border-2 border-[#FFBFBF]"
               placeholder="메세지를 입력해주세요..."
+              autoComplete="message"
             ></textarea>
           </div>
           <div className="w-full flex justify-center">
