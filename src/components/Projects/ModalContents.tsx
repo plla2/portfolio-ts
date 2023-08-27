@@ -99,14 +99,14 @@ const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
                 whileHover={{ scale: 1.1, backgroundColor: "#94B49F" }}
                 whileTap={{ scale: 0.9 }}
                 className="w-[150px] bg-primary-500 border-2 border-grayscale-950 py-2 rounded-md"
-                onClick={() => window.open("https://github.com/plla2")}
+                onClick={() => window.open(item.github)}
               >
                 <i className="fa fa-github"></i>
                 <span className="ml-1">GITHUB</span>
               </m.button>
               <m.button
                 className="w-[150px] ml-[10px] bg-primary-500 border-2 border-grayscale-950 py-2 rounded-md"
-                onClick={() => window.open("https://github.com/plla2")}
+                onClick={() => window.open(item.demo)}
                 initial={{ scale: 1 }}
                 whileHover={{ scale: 1.1, backgroundColor: "#94B49F" }}
                 whileTap={{ scale: 0.9 }}

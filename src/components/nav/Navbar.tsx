@@ -45,6 +45,7 @@ const Navbar = () => {
                   smooth={true}
                   offset={0}
                   duration={150}
+                  isDynamic={true}
                 >
                   {link.title}
                 </Link>
