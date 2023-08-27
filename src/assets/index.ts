@@ -29,6 +29,9 @@ import lofi2 from "./ModalImg/lofi2.webp";
 import lofi3 from "./ModalImg/lofi3.webp";
 import close from "./navIcon/close.svg";
 import demoIcon from "./Icons/internet.svg";
+import port1 from "./ModalImg/portfolio1.webp";
+import port2 from "./ModalImg/portfolio2.webp";
+import port3 from "./ModalImg/portfolio3.webp";
 
 export {
   html,
@@ -62,4 +65,7 @@ export {
   lofi2,
   lofi3,
   close,
+  port1,
+  port2,
+  port3,
 };
