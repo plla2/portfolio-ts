@@ -57,19 +57,19 @@ const Navbar = () => {
           <img
             src={toggle ? close : menu}
             onClick={() => setToggle(!toggle)}
-            className="w-[35px] h-[35px] object-contain cursor-pointer rounded-md z-20 hover:bg-primary-400 hover:bg-opacity-50"
+            className="w-[30px] h-[30px] object-contain cursor-pointer rounded-md z-20 absolute top-5"
           />
           <div
             className={`${
               !toggle ? "hidden" : "flex"
             } pt-15 p-6 absolute top-2 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl bg-primary-400 bg-opacity-50`}
           >
-            <ul className="flex justify-end items-start flex-col gap-4">
+            <ul className="flex justify-end items-start flex-col gap-4 text-[#e9e9e9]">
               {navLinks.map((link) => {
                 return (
                   <li
                     key={link.id}
-                    className="text-[18px] font-bold cursor-pointer"
+                    className="text-[18px] font-bold cursor-pointer before:ml-auto after:content-[''] after:w-[0%] after:h-[2px] after:bg-primary-600 after:block after:duration-500 before:content-[''] before:w-[0%] before:h-[2px] before:bg-primary-600 before:block before:duration-500 hover:after:w-full hover:before:w-full"
                   >
                     <Link
                       activeClass="active"
