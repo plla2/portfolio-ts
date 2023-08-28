@@ -13,7 +13,7 @@ const About = () => {
         <div className="w-full">
           <SectionTitle title="ABOUT ME" subTitle="INTRODUCTION" />
         </div>
-        <div className="w-full flex flex-col-reverse sm:flex-row pb-16">
+        <div className="w-full flex flex-col-reverse md:flex-row pb-16">
           <div className="w-full md:w-[50%] md:h-full flex items-center mt-10">
             <LazyMotion features={domAnimation} strict>
               <m.p
@@ -26,7 +26,7 @@ const About = () => {
                   damping: 20,
                 }}
                 style={{ fontFamily: "GmarketMedium" }}
-                className="text-grayscale-0 p-7 flex flex-col gap-6"
+                className="text-grayscale-0 p-7 flex flex-col gap-6 mt-5"
               >
                 <span>{introduction.text[0]}</span>
                 <span className="text-[#FFC4C4]">{introduction.text[1]}</span>

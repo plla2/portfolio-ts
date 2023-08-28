@@ -8,7 +8,7 @@ const Skills = () => {
     <>
       <div
         id="skills"
-        className="w-full overflow-hidden-web flex flex-col items-center "
+        className="w-full overflow-hidden-web flex flex-col items-center pb-16 sm:pb-0"
       >
         <div className="w-full min-h-[800px] flex flex-col xl:w-[80%] items-center mt-12">
           <div className="w-full my-10">

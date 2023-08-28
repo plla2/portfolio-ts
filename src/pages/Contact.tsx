@@ -19,7 +19,7 @@ const Contact = () => {
               initial={{ x: 200 }}
               whileInView={{ x: 0 }}
               transition={{ duration: 1, type: "spring" }}
-              className="w-full sm:w-[90%] md:w-[80%] sm:h-[600px] p-4 flex flex-col sm:flex-row gap-4 justify-center mt-5"
+              className="w-full sm:w-[90%] md:w-[80%] sm:h-[600px] p-4 flex flex-col sm:flex-row gap-4 justify-center mt-5 items-center"
             >
               <div className="flex justify-center"></div>
               <ContactForm />
