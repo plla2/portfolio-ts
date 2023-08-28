@@ -43,7 +43,7 @@ const ContactForm = () => {
           &nbsp;
         </h2>
       </div>
-      <div className="w-full flex justify-center mt-8">
+      <div className="w-full flex justify-center mt-8 mb-8">
         <form
           id="contact_form"
           ref={formRef}
