@@ -30,12 +30,13 @@ import {
   port3,
 } from "../assets";
 
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faSquarePen } from "@fortawesome/free-solid-svg-icons";
 
 const icons = {
   faGithub,
-  faLinkedin,
   sendIcon,
+  faSquarePen,
 };
 
 export const navLinks = [
@@ -172,7 +173,7 @@ const projects = [
     name: "Portfolio",
     stack: "React.js, TypeScript, Tailwindcss, Framer-motion",
     description:
-      "React, Typescript framer-motion을 이용한 다양한 애니메이션을 가진 포트폴리오",
+      "React, Typescript, framer-motion을 이용한 다양한 애니메이션을 가지고있고, 반응형으로 디자인한 포트폴리오",
     image: portfolio,
     team: "Solo-Project",
     github: "https://github.com/plla2/portfolio-ts",

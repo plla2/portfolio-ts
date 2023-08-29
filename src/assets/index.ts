@@ -1,4 +1,3 @@
-import avatar from "./Avatar/avatar.jpeg";
 import phoneIcon from "./Icons/phone-fill.svg";
 import githubIcon from "./Icons/github.svg";
 import mailIcon from "./Icons/mail.svg";
@@ -7,11 +6,10 @@ import moviepop from "./ProjectImg/moviePoP.webp";
 import lofi from "./ProjectImg/lofi.webp";
 import portfolio from "./ProjectImg/portfolio.webp";
 import linkIcon from "./Icons/link-bold.svg";
-import footerTistory from "./Icons/file-post.svg";
 import html from "./SkillsIcon/html.svg";
 import css from "./SkillsIcon/css.svg";
 import figma from "./SkillsIcon/figma-dark.svg";
-import git from "./SkillsIcon/git (1).svg";
+import git from "./SkillsIcon/git.svg";
 import js from "./SkillsIcon/javascript.svg";
 import postman from "./SkillsIcon/postman.svg";
 import react from "./SkillsIcon/react-dark.svg";
@@ -46,7 +44,6 @@ export {
   styled,
   tailwind,
   ts,
-  avatar,
   phoneIcon,
   githubIcon,
   mailIcon,
@@ -56,7 +53,6 @@ export {
   portfolio,
   linkIcon,
   demoIcon,
-  footerTistory,
   sendIcon,
   moviepop1,
   moviepop2,

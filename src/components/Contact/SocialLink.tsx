@@ -12,7 +12,7 @@ const SocialLink = () => {
       </a>
       <a href="https://jhbljs92.tistory.com/" target="_blank">
         <FontAwesomeIcon
-          icon={icons.faLinkedin}
+          icon={icons.faSquarePen}
           className="text-3xl text-grayscale-0 hover:scale-110  transition-all duration-75"
         />
       </a>
