@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import HeroScroll from "../components/Hero/HeroScroll";
 import ProjectCards from "../components/Projects/ProjectCards";
 import SectionTitle from "../components/Section/SectionTitle";
@@ -7,13 +7,25 @@ import { LazyMotion, domAnimation } from "framer-motion";
 const Project = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
+  const resizeTimerRef = useRef<NodeJS.Timeout | null>(null);
   const handleResize = () => {
     setScreenWidth(window.innerWidth);
   };
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
+    const handleResizeWithTimer = () => {
+      if (resizeTimerRef.current !== null) {
+        clearTimeout(resizeTimerRef.current);
+      }
+      resizeTimerRef.current = setTimeout(handleResize, 400);
+    };
+
+    window.addEventListener("resize", handleResizeWithTimer, false);
+
     return () => {
-      window.removeEventListener("resize", handleResize);
+      if (resizeTimerRef.current !== null) {
+        clearTimeout(resizeTimerRef.current);
+      }
+      window.removeEventListener("resize", handleResizeWithTimer);
     };
   }, []);
 
