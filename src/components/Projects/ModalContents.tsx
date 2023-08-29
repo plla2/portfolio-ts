@@ -2,6 +2,7 @@ import ReactModal from "react-modal";
 import { ContentTypes } from "./Types";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { close } from "../../assets";
+import "./styles.css";
 
 const dropIn = {
   hidden: {
@@ -33,32 +34,8 @@ const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
       isOpen={showModal}
       onRequestClose={handleCloseModal}
       ariaHideApp={false}
-      style={{
-        overlay: {
-          backgroundColor: " rgba(0, 0, 0, 0.4)",
-          width: "100%",
-          height: "100vh",
-          zIndex: "9999",
-          position: "fixed",
-          top: "0",
-          left: "0",
-          overflow: "hidden",
-        },
-        content: {
-          width: "65rem",
-          height: "45rem",
-          zIndex: "150",
-          position: "relative",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          borderRadius: "15px",
-          boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
-          backgroundColor: "#E5E3C9",
-          justifyContent: "center",
-          overflow: "scroll",
-        },
-      }}
+      className="custom-modal-content"
+      overlayClassName="custom-modal-overlay"
     >
       <LazyMotion features={domAnimation}>
         <m.div
@@ -69,8 +46,8 @@ const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
           onClick={(e) => e.stopPropagation()}
           style={{ display: "flex", height: "100vh" }}
         >
-          <div className="container__child relative ml-8 mt-7 w-[50%] flex flex-col  ">
-            <div className="thumbnail__content text-center z-10 w-full bg-primary-600 p-6 mb-5 rounded-lg">
+          <div className="container__child">
+            <div className="thumbnail__content">
               <img
                 src={item.modalImg[0]}
                 alt="프로젝트 이미지"
@@ -93,22 +70,22 @@ const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
                 decoding="async"
               />
             </div>
-            <div className="thumbnail__links relative z-10 flex w-full justify-between">
+            <div className="thumbnail__links">
               <m.button
                 initial={{ scale: 1 }}
-                whileHover={{ scale: 1.1, backgroundColor: "#94B49F" }}
+                whileHover={{ scale: 1.1, backgroundColor: "#8D7B68" }}
                 whileTap={{ scale: 0.9 }}
-                className="w-[150px] bg-primary-500 border-2 border-grayscale-950 py-2 rounded-md"
+                className="w-[150px] bg-[#A4907C] border-2 border-grayscale-950 py-2 rounded-md"
                 onClick={() => window.open(item.github)}
               >
                 <i className="fa fa-github"></i>
                 <span className="ml-1">GITHUB</span>
               </m.button>
               <m.button
-                className="w-[150px] ml-[10px] bg-primary-500 border-2 border-grayscale-950 py-2 rounded-md"
+                className="w-[150px] ml-[10px] bg-[#A4907C] border-2 border-grayscale-950 py-2 rounded-md"
                 onClick={() => window.open(item.demo)}
                 initial={{ scale: 1 }}
-                whileHover={{ scale: 1.1, backgroundColor: "#94B49F" }}
+                whileHover={{ scale: 1.1, backgroundColor: "#8D7B68" }}
                 whileTap={{ scale: 0.9 }}
               >
                 <i className="fa-solid fa-globe"></i>
@@ -116,21 +93,21 @@ const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
               </m.button>
             </div>
           </div>
-          <div className="container__child w-full h-full text-[#191919] ml-8 mt-7">
+          <div className="container__child1">
             <img
               src={close}
               alt="닫기 버튼"
-              className="absolute w-6 h-6 right-[3%] top-2 cursor-pointer"
+              className="absolute w-6 h-6 right-[3%] top-5 cursor-pointer"
               onClick={handleCloseModal}
             />
             <span>
-              <p className="w-[9rem] h-14 flex items-center justify-center rounded-md text-center text-xl font-semibold bg-primary-500 ">
+              <p className="w-[9rem] h-14 flex items-center justify-center rounded-md text-center text-xl font-semibold bg-[#C8B6A6] ">
                 {item.name}
               </p>
-              <p className="w-fit bg-primary-500 px-3 rounded-full mt-2">
+              <p className="w-fit bg-[#9BABB8] px-3 rounded-full mt-2">
                 {item.team}
               </p>
-              <p className="w-fit bg-primary-500 p-2 px-4 rounded-lg mt-2">
+              <p className="w-fit bg-[#C8B6A6] p-2 px-4 rounded-lg mt-2">
                 {item.description}
               </p>
             </span>
@@ -141,11 +118,13 @@ const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
               <p className="opacity-70">{item.date}</p>
             </span>
             <span>
-              <p className="w-fit mt-4 font-semibold mb-1 border-b-2">Stack</p>
+              <p className="w-fit mt-4 font-semibold mb-1 border-b-2">
+                주요 사용 스택 / 라이브러리
+              </p>
               <p className="opacity-70">{item.stack}</p>
               <ul className="mt-4">
                 {stackCauses.map((cause, index) => (
-                  <li className="text-[#5B9A8B]" key={index}>
+                  <li className="text-[#594545]" key={index}>
                     {cause}
                   </li>
                 ))}
