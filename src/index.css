@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Jalnan";
+  font-family: "JalnanWoff2";
   src: url(/Fonts/Jalnan/Jalnan.woff2) format("woff2");
 }
 @font-face {

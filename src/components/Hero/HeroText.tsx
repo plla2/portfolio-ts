@@ -13,7 +13,7 @@ const HeroText = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, type: "spring" }}
           className="text-center flex justify-center items-center flex-col opacity-100 text-8xl cursor-default"
-          style={{ fontFamily: "Jalnan" }}
+          style={{ fontFamily: "JalnanWoff2" }}
         >
           <m.span
             initial={{ y: -100 }}

@@ -12,13 +12,13 @@ const SectionTitle = ({ title, subTitle }: SectionType) => {
       >
         <span
           className="opacity-50"
-          style={{ fontFamily: "Jalnan", fontWeight: "600" }}
+          style={{ fontFamily: "JalnanWoff2", fontWeight: "600" }}
         >
           {subTitle}
         </span>
         <h2
           className="tracking-wider text-5xl sm:text-6xl md:text-7xl"
-          style={{ fontFamily: "Jalnan" }}
+          style={{ fontFamily: "JalnanWoff2" }}
         >
           {title.split("").map((char, index) => {
             if (char === " ") {
