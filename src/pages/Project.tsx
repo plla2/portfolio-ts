@@ -3,6 +3,7 @@ import HeroScroll from "../components/Hero/HeroScroll";
 import ProjectCards from "../components/Projects/ProjectCards";
 import SectionTitle from "../components/Section/SectionTitle";
 import { LazyMotion, domAnimation } from "framer-motion";
+import { projects } from "../constant/Const";
 
 const Project = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -44,7 +45,7 @@ const Project = () => {
               <div className="absolute top-[67%] left-[10%]">
                 {screenWidth <= 1023 && 560 <= screenWidth && <HeroScroll />}
               </div>
-              <ProjectCards />
+              <ProjectCards projects={projects} />
             </div>
           </div>
         </div>
