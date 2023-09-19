@@ -65,26 +65,26 @@ const ProjectSingle = ({ item }: PropsType) => {
         whileInView={{ opacity: 1 }}
       >
         <div className="up flex flex-row gap-[0.5em]">
-          <m.button
-            initial={{ scale: 1 }}
-            whileHover={{ scale: 1.1 }}
-            className="card1 w-14 h-14 outline-none border-0 bg-[#ECF9FF] "
-            onClick={() => window.open(item.github)}
-          >
-            <img
-              src={githubIcon}
-              alt="깃허브 아이콘"
-              className="ml-[0.8em] w-8"
-            />
-          </m.button>
-          <m.button
-            initial={{ scale: 1 }}
-            whileHover={{ scale: 1.1 }}
-            className="card2 w-14 h-14 outline-none border-0 bg-[#ECF9FF]"
-            onClick={() => window.open(item.demo)}
-          >
-            <img src={demoIcon} alt="링크 아이콘" className="ml-[0.7em] w-8" />
-          </m.button>
+          {[
+            { icon: githubIcon, url: item.github, alt: "깃허브 아이콘" },
+            { icon: demoIcon, url: item.demo, alt: "링크 아이콘" },
+          ].map((button, index) => (
+            <m.button
+              key={index}
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={`card${
+                index + 1
+              } w-14 h-14 outline-none border-0 bg-[#ECF9FF] `}
+              onClick={() => window.open(button.url)}
+            >
+              <img
+                src={button.icon}
+                alt={button.alt}
+                className="ml-[0.8em] w-8"
+              />
+            </m.button>
+          ))}
         </div>
       </m.div>
     </div>
