@@ -9,14 +9,11 @@ import { PropsType } from "./Types";
 const ProjectSingle = ({ item }: PropsType) => {
   ReactModal.setAppElement("#root");
   const [showModal, setShowModal] = useState(false);
-
   const handleOpenModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
 
   useEffect(() => {
-    if (showModal) {
-      document.body.style.overflow = "hidden";
-    }
+    document.body.style.overflow = showModal ? "hidden" : "auto";
     return () => {
       document.body.style.overflow = "auto";
     };
