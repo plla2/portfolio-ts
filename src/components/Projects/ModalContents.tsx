@@ -48,27 +48,15 @@ const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
         >
           <div className="container__child">
             <div className="thumbnail__content">
-              <img
-                src={item.modalImg[0]}
-                alt="프로젝트 이미지"
-                className="rounded-lg"
-                loading="lazy"
-                decoding="async"
-              />
-              <img
-                src={item.modalImg[1]}
-                alt="프로젝트 이미지"
-                className="rounded-lg"
-                loading="lazy"
-                decoding="async"
-              />
-              <img
-                src={item.modalImg[2]}
-                alt="프로젝트 이미지"
-                className="rounded-lg"
-                loading="lazy"
-                decoding="async"
-              />
+              {item.modalImg.map((modalImg) => (
+                <img
+                  src={modalImg}
+                  alt="프로젝트 이미지"
+                  className="rounded-lg"
+                  loading="lazy"
+                  decoding="async"
+                />
+              ))}
             </div>
             <div className="thumbnail__links">
               <m.button
