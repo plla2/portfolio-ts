@@ -18,20 +18,10 @@ const App = () => {
         <>
           <Suspense fallback={<Loader setShowLoader={setShowLoader} />}>
             <Navbar />
-            {/* </Suspense> */}
-            {/* <Suspense fallback={<Loader setShowLoader={setShowLoader} />}> */}
             <Hero />
-            {/* </Suspense> */}
-            {/* <Suspense fallback={<Loader setShowLoader={setShowLoader} />}> */}
             <About />
-            {/* </Suspense> */}
-            {/* <Suspense fallback={<Loader setShowLoader={setShowLoader} />}> */}
             <Project />
-            {/* </Suspense> */}
-            {/* <Suspense fallback={<Loader setShowLoader={setShowLoader} />}> */}
             <Skills />
-            {/* </Suspense> */}
-            {/* <Suspense fallback={<Loader setShowLoader={setShowLoader} />}> */}
             <Contact />
           </Suspense>
         </>
