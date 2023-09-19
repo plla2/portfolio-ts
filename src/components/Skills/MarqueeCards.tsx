@@ -8,7 +8,7 @@ interface props {
 
 const MarqueeCards = ({ children, direction }: props) => {
   return (
-    <Marquee direction={direction} speed={80} pauseOnHover={true}>
+    <Marquee direction={direction} speed={100} pauseOnHover={true}>
       {children}
     </Marquee>
   );
