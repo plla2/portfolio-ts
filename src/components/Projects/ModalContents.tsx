@@ -26,9 +26,12 @@ const dropIn = {
 };
 
 const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
-  const works = item.mywork;
-  const stackCauses = item.stackCause;
-  const troubleShoots = item.troubleShootings;
+  const {
+    mywork: works,
+    stackCause: stackCauses,
+    troubleShootings: troubleShoots,
+  } = item;
+
   return (
     <ReactModal
       isOpen={showModal}
@@ -48,8 +51,9 @@ const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
         >
           <div className="container__child">
             <div className="thumbnail__content">
-              {item.modalImg.map((modalImg) => (
+              {item.modalImg.map((modalImg, index) => (
                 <img
+                  key={index}
                   src={modalImg}
                   alt="프로젝트 이미지"
                   className="rounded-lg"
