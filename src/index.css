@@ -5,14 +5,17 @@
 @font-face {
   font-family: "JalnanWoff2";
   src: url(/Fonts/Jalnan/Jalnan.woff2) format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "GmarketMedium";
   src: url(/Fonts/Gmarket/GmarketSansTTFMedium.woff2) format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "GmarketBold";
   src: url(/Fonts/Gmarket/GmarketSansTTFBold.woff2) format("woff2");
+  font-display: swap;
 }
 * {
   margin: 0;
