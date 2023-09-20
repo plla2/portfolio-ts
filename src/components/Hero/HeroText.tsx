@@ -14,6 +14,7 @@ const HeroText = () => {
           transition={{ duration: 1, type: "spring" }}
           className="text-center flex justify-center items-center flex-col opacity-100 text-8xl cursor-default"
           style={{ fontFamily: "JalnanWoff2" }}
+          rel="preload"
         >
           <m.span
             initial={{ y: -100 }}

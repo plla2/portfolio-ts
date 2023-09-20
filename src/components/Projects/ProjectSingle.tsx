@@ -35,11 +35,16 @@ const ProjectSingle = ({ item }: PropsType) => {
           <div className="content">
             <div className="back">
               <div className="back-content">
-                <img src={item.image} alt="프로젝트 이미지" />
+                <img src={item.image} alt="프로젝트 이미지" loading="lazy" />
               </div>
             </div>
             <div className="front">
-              <img src={item.image} alt="프로젝트 이미지" className="blur-sm" />
+              <img
+                src={item.image}
+                alt="프로젝트 이미지"
+                className="blur-sm"
+                loading="lazy"
+              />
               <div className="front-content">
                 <small className="badge">{item.name}</small>
                 <div className="description">
