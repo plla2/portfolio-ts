@@ -72,13 +72,13 @@ const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
                   initial={{ scale: 1 }}
                   whileHover={{ scale: 1.1, backgroundColor: "#8D7B68" }}
                   whileTap={{ scale: 0.9 }}
-                  className="w-[150px] bg-[#A4907C] border-2 border-grayscale-950 py-2 rounded-md"
+                  className="link__button w-[150px] bg-[#A4907C] border-2 border-grayscale-950 py-2 rounded-md"
                   onClick={() => window.open(button.link)}
                 >
                   {button.label === "GITHUB" ? (
                     <i className="fa fa-github"></i>
                   ) : (
-                    <i className="fa fa-github"></i>
+                    <i className="fa-solid fa-globe"></i>
                   )}
 
                   <span className="ml-1">{button.label}</span>
@@ -94,7 +94,7 @@ const ModalContents = ({ item, showModal, handleCloseModal }: ContentTypes) => {
               onClick={handleCloseModal}
             />
             <span>
-              <p className="w-[9rem] h-14 flex items-center justify-center rounded-md text-center text-xl font-semibold bg-[#C8B6A6] ">
+              <p className="modal__title w-[9rem] h-14 flex items-center justify-center rounded-md text-center text-xl font-semibold bg-[#C8B6A6] ">
                 {item.name}
               </p>
               <p className="w-fit bg-[#9BABB8] px-3 rounded-full mt-2">
